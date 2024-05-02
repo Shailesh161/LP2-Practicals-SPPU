@@ -1,0 +1,47 @@
+1. **Bubble Sort**: Repeatedly swaps adjacent elements if they are in the wrong order.
+2. **Selection Sort**: Repeatedly selects the smallest (or largest) element and places it in its correct position.
+3. **Insertion Sort**: Builds the final sorted array one item at a time by inserting each element into its proper place.
+4. **Merge Sort**: Divides the array into smaller sub-arrays, sorts those sub-arrays, and then merges them back together.
+5. **Quick Sort**: Picks a pivot element and partitions the array into two sub-arrays based on the pivot, then recursively sorts each sub-array.
+6. **Heap Sort**: Builds a heap from the array, repeatedly removes the root element (the largest or smallest) and rebuilds the heap until the array is sorted.
+
+
+Sure, here are the time complexities of the sorting algorithms mentioned:
+
+1. **Bubble Sort**: 
+   - Time Complexity: 
+     - Best Case: O(n)
+     - Average Case: O(n^2)
+     - Worst Case: O(n^2)
+
+2. **Selection Sort**: 
+   - Time Complexity: 
+     - Best Case: O(n^2)
+     - Average Case: O(n^2)
+     - Worst Case: O(n^2)
+
+3. **Insertion Sort**: 
+   - Time Complexity: 
+     - Best Case: O(n)
+     - Average Case: O(n^2)
+     - Worst Case: O(n^2)
+
+4. **Merge Sort**: 
+   - Time Complexity: 
+     - Best Case: O(n log n)
+     - Average Case: O(n log n)
+     - Worst Case: O(n log n)
+
+5. **Quick Sort**: 
+   - Time Complexity: 
+     - Best Case: O(n log n)
+     - Average Case: O(n log n)
+     - Worst Case: O(n^2) (rare, occurs when the pivot is the smallest or largest element)
+
+6. **Heap Sort**: 
+   - Time Complexity: 
+     - Best Case: O(n log n)
+     - Average Case: O(n log n)
+     - Worst Case: O(n log n)
+
+These time complexities represent the number of comparisons and swaps required to sort an array of size \(n\). The complexities may vary based on the specific implementation and input data characteristics.
