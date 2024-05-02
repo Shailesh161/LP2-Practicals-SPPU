@@ -1,0 +1,13 @@
+Points for LP-II Practical Examination
+1. Follow Timings strictly
+2. Carry I-Cards and Hall Tickets (if taken)
+Cloud Computing:
+Experiment 1: AWS EC2: Logging into a Linux Instance Using Amazon EC2 Instance Connect
+Experiment 2: Google API :Introduction to APIs in Google Cloud /A Tour of Google Cloud Hands-on Labs  
+Experiment 3: Salesforce TrailHead: Apex Programming https://trailhead.salesforce.com/content/learn/projects/quickstart-apex
+Experiment 4: Salesforce SaaS: https://trailhead.salesforce.com/content/learn/projects/quick-start-dreamhouse-sample-app
+Be prepared for VIVA (AI/Elective)
+3. Carry a water bottle
+4. Have proper breakfast/lunch
+5. Be humble/avoid unnecessary argements 
+6. Ensure that you have given course exit survey feedback
