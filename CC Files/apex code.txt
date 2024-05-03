@@ -1,0 +1,96 @@
+public class firstclass1 {
+
+{
+
+public static void Addition()
+
+Integer a = 4 ;
+
+Integer b = 5 ;
+
+Integer c = a + b
+
+Integer d = 4 + 5
+
+Integer e = a + 5 ;
+
+System.debug('Add = + c);
+
+System.debug('Add =^ prime + d )
+
+System.debug('Add =+ e )
+}
+
+public static void Subtraction()
+
+{
+
+Integer a = 4 ;
+
+Integer b = 5
+
+Integer c * 1 = a - b
+
+Integer d * 1 = b - a
+
+Integer e * 1 = 4 - 5
+
+Integer f * 1 = a - 5
+
+debug(^ prime Sub =^ prime +c1) ;
+
+System.debug('Sub =' + d1);
+
+System.debug('Sub =' + e1);
+
+}
+
+System.debug('Sub =' + f1);
+
+
+public static void Multi()
+
+Integer a = 4 ;
+
+Integer b = 5 ;
+
+Integer c =a^ * b ;
+
+Integer d =4^ * 5
+
+Integer e = a ^ * 5 ;
+
+System.debug(c);
+
+System.debug(d);
+
+System.debug(e);
+
+Integer f = - 4 ;
+
+Integer g = a * f;
+
+System.debug(g);
+
+}
+
+public static void Div()
+
+{
+
+Integer a = 4 ;
+
+Integer b = 5 ;
+
+Integer c = a / b
+
+Integer d = 4 / 5;
+
+Integer e = a / 5 ;
+
+System.debug(c);
+
+System.debug(d);
+
+System.debug(e);
+}}
