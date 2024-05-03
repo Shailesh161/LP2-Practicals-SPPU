@@ -74,7 +74,42 @@ Sure, let's discuss the advantages, disadvantages, applications, and a real-life
 **Google Maps**: One real-life example of A* algorithm is the routing feature in Google Maps. When you input a starting location and a destination, Google Maps uses A* (or a variant of it) to find the shortest path between the two points, considering factors such as distance, traffic conditions, and road closures. The algorithm efficiently searches through a massive network of roads and intersections to provide you with the optimal route in real-time. This demonstrates the versatility and practical application of A* algorithm in solving real-world problems efficiently.
 
 
+The algorithm implemented in your provided code follows the A* search algorithm to solve the 8-puzzle problem. Here's an outline of the algorithm:
 
+1. **Initialization**:
+   - Initialize an empty open list to store nodes that need to be evaluated.
+   - Initialize an empty closed list to store nodes that have already been evaluated.
+   - Set a maximum depth limit to avoid infinite looping.
+
+2. **Input**:
+   - Accept input for the initial state of the puzzle.
+   - Accept input for the goal state of the puzzle.
+
+3. **Create Start Node**:
+   - Create a node representing the initial state of the puzzle.
+   - Calculate its evaluation function value using the heuristic function \(f = h + g\), where \(h\) is the heuristic value (number of misplaced tiles) and \(g\) is the level of the node (depth in the search tree).
+
+4. **Add Start Node to Open List**:
+   - Add the start node to the open list.
+
+5. **Iterative Search**:
+   - While the open list is not empty and the maximum depth limit has not been reached:
+     - Pop the node with the lowest evaluation function value from the open list.
+     - Check if the current state is the goal state:
+       - If yes, the solution is found. Exit the loop.
+     - Generate child nodes by swapping the blank space with neighboring tiles.
+     - Calculate the evaluation function value for each child node.
+     - Add child nodes to the open list.
+     - Add the current node to the closed list.
+
+6. **Output**:
+   - If a solution is found, print the steps taken to reach the goal state.
+   - If no solution is found within the maximum depth limit, print a message indicating that no solution was found.
+
+7. **End**:
+   - Exit the algorithm.
+
+This algorithm follows the A* search strategy, which combines the advantages of both uniform cost search and greedy best-first search by considering both the cost to reach a state (level of the node) and the estimated cost to reach the goal from that state (heuristic function value).
 
 
 
