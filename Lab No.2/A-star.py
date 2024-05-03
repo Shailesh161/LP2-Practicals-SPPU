@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.level = level
         self.fval = fval
+    #Generates child nodes by swapping the blank space with adjacent tiles (up, down, left, right).
     def generate_child(self):
         x, y = self.find(self.data, '_')
         val_list = [[x, y-1], [x, y+1], [x-1, y], [x+1, y]]
@@ -13,6 +14,7 @@ class Node:
                 child_node = Node(child, self.level+1, 0)
                 children.append(child_node)
         return children
+    # Swaps the blank space with a neighboring tile to generate a new state.
     def shuffle(self, puz, x1, y1, x2, y2):
         if 0 <= x2 < len(self.data) and 0 <= y2 < len(self.data):
             temp_puz = self.copy(puz)
@@ -22,6 +24,7 @@ class Node:
             return temp_puz
         else:
             return None
+    # preserving copy of original state in case of damage
     def copy(self, root):
         temp = []
         for i in root:
@@ -30,6 +33,7 @@ class Node:
                 t.append(j)
             temp.append(t)
         return temp
+    # Finds the position of the blank space 
     def find(self, puz, x):
         for i in range(len(self.data)):
             for j in range(len(self.data)):
@@ -47,6 +51,8 @@ class Puzzle:
             temp = input().split(" ")
             puz.append(temp)
         return puz
+    # Calculates the evaluation function value f=h+g;
+
     def f(self, start, goal):
         return self.h(start.data, goal) + start.level
     def h(self, start, goal):
@@ -61,8 +67,10 @@ class Puzzle:
         start = self.accept()
         print("Enter the goal state matrix:-")
         goal = self.accept()
+        # created start node
         start = Node(start, 0, 0)
         start.fval = self.f(start, goal)
+        # start node is added to open list
         self.open.append(start)
         depth = 0
         while self.open:
